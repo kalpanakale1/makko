@@ -1,0 +1,258 @@
+:root{
+    --bs-primary:#02A95C;
+    --bs-primary-rgb:2, 169, 92;
+    --secondary: #61CE70;
+}
+body,button,input{
+    font-family: 'Yantramanav';
+}
+a{
+    font-family: 'Heebo';
+}
+.mt-70{
+    margin-top: 60% !important;
+}
+.secondary{
+    color: #61CE70;
+}
+.secondary-bg{
+    background-color: #61CE70;
+}
+.py-80{
+    padding: 80px 0;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.i-bg{
+    background-color: #9BEAD1; 
+}
+.font-heebo{
+    font-family: 'Heebo';
+}
+
+// header 
+header{
+    // z-index: 99;
+    .navbar{
+        .navbar-toggler{
+            color: white !important;
+        }
+        .navbar-nav{
+            z-index: 1;
+            .nav-item{
+                .active{
+                   color: #61CE70 !important;
+                }
+                .nav-link{
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #61CE70 !important;
+                    }
+                }
+            }
+        }
+        .dropdown-item:hover {
+            color: #61CE70 !important;
+            background-color: transparent !important;
+        }
+    }
+    .btn{
+        &:hover{
+            border-color: #61CE70 !important;
+            color: #61CE70 !important;
+        }
+    }
+}
+
+// banner
+.bg-banner{
+    background: url(../img/inspired-creative-manager-in-office.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+// banner 
+.banner-bg{
+    position: absolute;
+    top: 25%;
+    bottom: 50%;
+    left: 10%;
+    .btn{
+        transition: all 0.5s;
+        &:hover{
+            background-color: #02A95C !important;
+        }
+    }
+}
+
+// service 
+.service{
+    .service-box{
+        .icon{
+            i{
+                background-color: rgba(97, 206, 112, 0.4);
+            }
+        }
+    }
+}
+
+// about service
+.about-s{
+    position: relative;
+    .service-overlay{
+        background-image: url(../img/map_bg.png);
+        opacity: 0.1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    
+}
+
+// marketing
+.marketing{
+    background: url(../img/creative-designers-lifestyle-walking-in-the-city.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+} 
+
+// feature 
+.feature{
+    .feature-box{
+        transition: all 0.5s;
+        &:hover{
+            background-color: white !important;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// advertisement
+.advertisement{
+    background: url(../img/creative-start-up-team-discussing-ideas-in-modern-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+} 
+
+// choose-us
+.choose-us{
+    background: url(../img/header_1-1024x683-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: inset 0px 0px 0px 2000px rgba(255, 255, 255, 0.482) ;
+    .support{
+            height: 350px;
+            overflow: hidden;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transition: all 0.5 ease-in-out;
+            cursor: pointer;
+                &:hover{
+                    .choosebox-overlay{
+                        opacity: 1;
+                        transform: translateX(0) translateY(-100%);
+                    }
+                }
+        .choosebox-overlay{
+            opacity: 0;
+            transition: all 0.5s;
+            bottom: -100%;
+        }
+    }
+}
+    
+// insite 
+.insite{
+    .news-fleid{
+        .news-content{
+            h4{
+                transition: all 0.5s;
+                cursor: pointer;
+                &:hover{
+                    color: #02A95C;
+                }
+            }
+            h6{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// contact us
+.contact{
+    background-color: #f3f3f3;
+} 
+
+// footer
+.footer-bg{
+    background: url(../img/bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .company{
+        ul{
+            li{
+                a{
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #02A95C !important;
+                    }
+                }
+            }
+        }
+    }
+    .newletter{
+        input{
+            background-color: #f3f3f3;
+        }
+    }
+    .footer-foot{
+        .footer-icon{
+            ul{
+                li{
+                    transition: all 0.5s;
+                    &:hover{
+                        transform: translateY(-8px);
+                        // background-color: #027741 !important;
+                    }
+                    a{
+                        font-size: 12px;
+                        transition: all 0.5s;
+                        &:hover{
+                            // transform: translateY(-8px);
+                            background-color: #027741 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    p{
+        font-size: 14px;
+    }
+}
